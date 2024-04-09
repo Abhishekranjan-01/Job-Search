@@ -34,7 +34,6 @@ export default function Result() {
       <main className="relative w-full py-2 sm:py-4 px-2 sm:px-4 md:px-8 flex flex-col gap-12 text-gray-950 bg-gray-200 min-h-screen">
         <Form isResultPage={true} />
 
-        {console.log(apiResponse)}
         {!isLoading ? (
           apiResponse.map((result, i) => {
             return (
@@ -87,7 +86,6 @@ export default function Result() {
             </div>
           </>
         )}
-        {console.log("Data Done")}
       </main>
       <Footer />
     </>
